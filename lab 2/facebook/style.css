@@ -1,0 +1,65 @@
+.box {
+    position: absolute;
+    width: 513px;
+    height: 438px;
+    left: calc(50% - 513px/2 + 361.5px);
+    top: 171px;
+    
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.facebook_img{ 
+    position: absolute;
+    width: 321px;
+    height: 62px;
+    left: calc(50% - 321px/2 - 472.5px);
+    top: 248px;
+    
+    background: url(image.png);
+}
+
+#face_text {
+    position: absolute;
+    width: 609px;
+    height: 126px;
+    left: calc(50% - 609px/2 - 328.5px);
+    top: 341px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    
+    color: #000000;
+}
+
+#additional {
+    position: relative;
+    width: 513px;
+    height: 42px;
+    left: 825px;
+    top: 628px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+    }
+
+.input_box:hover {
+    position: relative;
+    width: 435px;
+    height: 51px;
+    left: calc(50% - 435px/2 + 362.5px);
+    top: 216px;
+    
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
