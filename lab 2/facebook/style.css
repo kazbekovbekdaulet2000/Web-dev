@@ -1,65 +1,119 @@
 .box {
-    position: absolute;
-    width: 513px;
-    height: 438px;
-    left: calc(50% - 513px/2 + 361.5px);
-    top: 171px;
+    position: static;
+    width: 380px;
+    height: 350px;
+    margin-left: 750px;
+    margin-top: 120px;
+    margin-bottom: 170px;
+    top: 130px;
+    border-radius: 10px;
     
     background: #FFFFFF;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 7px 3px #dbdde0;
 }
 
-.facebook_img{ 
+.facebook_img{  
+    width: 200px;
+    height:40px;
     position: absolute;
-    width: 321px;
-    height: 62px;
-    left: calc(50% - 321px/2 - 472.5px);
-    top: 248px;
-    
-    background: url(image.png);
+    margin: auto;
+    left: 15%;
+    top: 170px;
 }
 
-#face_text {
+.text{
+    width: 400px;
+    height:auto;
     position: absolute;
-    width: 609px;
-    height: 126px;
-    left: calc(50% - 609px/2 - 328.5px);
-    top: 341px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    
-    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    left: 15%;
+    top: 230px;
 }
 
-#additional {
+.input_box{
     position: relative;
-    width: 513px;
-    height: 42px;
-    left: 825px;
-    top: 628px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    
+    margin: auto;
     color: #000000;
-    }
-
-.input_box:hover {
-    position: relative;
-    width: 435px;
-    height: 51px;
-    left: calc(50% - 435px/2 + 362.5px);
-    top: 216px;
-    
+    width: 90%;
+    height: 48px;
+    padding-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    left: 5%;
+    margin-top: 20px;
+    border-radius: 4px;
     background: #FFFFFF;
     border: 1px solid #DCDCDC;
     box-sizing: border-box;
 }
+
+.input_box:focus{
+    transition: 0.1s;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 3px 1px #1877f2;
+}
+
+.Button_in{
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: bold;
+    width: 90%;
+    height: 48px;
+    left: 5%;
+    text-align: center;
+    background-color: #1877f2;
+    border-radius: 7px;
+    border: none;
+    margin: 20px 0;
+}
+.Button_in:hover,
+.Button_in:focus {
+    transition: 0.1s;
+    outline: none;
+    background-color: #166fe5;
+    cursor: pointer;
+}
+
+.Button_create{
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: bold;
+    width: 50%;
+    height: 48px;
+    left: 25%;
+    text-align: center;
+    background-color: #42b72a;
+    border-radius: 7px;
+    border: none;
+    margin: 20px 0;
+}
+.Button_create:hover,
+.Button_create:focus {
+    transition: 0.1s;
+    outline: none;
+    background-color: #36a420;
+    cursor: pointer;
+}
+
+.forgot_pass{
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #1877f2;
+    width: 90%;
+    height: auto;
+    left: 5%;
+    text-decoration-line: none;
+    text-align: center;
+    display:block;
+    border: none;
+    margin: 10px 0;
+}
+
+body{background-color: #f0f2f5;}
