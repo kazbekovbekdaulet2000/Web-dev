@@ -29,6 +29,17 @@ body{
     border: none;
     background: none;
 }
+.btn-text span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-text:hover span{
+    text-decoration-line: underline;
+    text-decoration-thickness:initial;
+}
 
 .photo-btn{
     background: none;
@@ -125,4 +136,19 @@ body{
     background: none;
     color: black;
     font-weight:200;
+}
+
+.flex2{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    box-sizing:border-box;
+}
+.flex-box{
+    width: 23%;
+    padding-left: 1%;
+    padding-right:1% ;
+    height: 200px;
+    background-color: #fcfcfcfc;
 }
