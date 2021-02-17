@@ -50,6 +50,13 @@ body {
     background: #ffffff;
 }
 
+.box_text{
+    position: relative;
+    left: 20px; 
+    top: 20px; 
+    color: black; 
+    font-size: 32px;
+}
 .add_text{
     display: flex;
     margin: auto;
@@ -167,4 +174,7 @@ ul li.done {
     transition: 0.4s;
     cursor: pointer;
 }
-  
+
+p{
+    margin: 0;    
+}
