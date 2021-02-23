@@ -3,7 +3,7 @@ var list = JSON.parse(localStorage.getItem("items")) || [];
 for (var i = 0; i<list.length; i++) {
     var todo = createLi(list[i].text);    
     if(list[i].done){
-        todo.classList.toggle('done');
+        todo.classList.add('done');
     }
     TodoList.appendChild(todo);
     var btn = createBtn(todo);
