@@ -18,7 +18,7 @@ export class ItemsComponent implements OnInit {
   }
 
   telegram(url, text){
-    window.open("https://t.me/share/url?url="+url + "&text="+text+"","_blank")
+    window.open("https://t.me/share/url?url="+url+"&text="+text,"_blank")
   }
 
   ngOnInit() {
