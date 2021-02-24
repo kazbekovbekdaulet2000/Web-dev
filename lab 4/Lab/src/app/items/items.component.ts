@@ -13,8 +13,12 @@ export class ItemsComponent implements OnInit {
 
   constructor() {}
 
-  onNavigate(link){
-    window.open(link, "_blank");
+  link(site){
+    window.open(site, "_blank");
+  }
+
+  telegram(){
+    window.open("https://t.me/webdevaskar","_blank")
   }
 
   ngOnInit() {

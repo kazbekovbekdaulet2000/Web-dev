@@ -1,10 +1,15 @@
 <div class = "container" >
-    <div class = "elements" *ngFor = 'let product of products; let i = index' >
-        <p> {{product.id}}</p>
-        <p> {{product.name}}</p>
-        <img src = {{product.image}} style ="width: 100%">
-        <p> {{product.des}}</p>
-        <p> Product rating {{product.rating}}/5</p>
-        <a href = {{product.link}} target="_blank"> lisad</a>
+    <div class = "elements" *ngFor = 'let product of products; let i = index'>
+        <div (click) = "link(product.link)">
+            <h3> {{ product.name }}</h3>
+            <div class = "image"><img src = {{product.image}} height="180px"></div>
+            <!-- <ng-image-slider [images] = "product.images"></ng-image-slider> -->
+            <p> {{product.des}}</p>
+            <p> Rating:    {{product.rating}}/5</p>
+            </div>
+        <div>
+            <button (click) = "telegram()" class= "btn_share"> share </button>
+            <button (click) = "link(product.link)"> link </button>
+        </div>
     </div>
 </div>
