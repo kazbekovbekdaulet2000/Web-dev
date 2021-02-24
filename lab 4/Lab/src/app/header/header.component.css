@@ -1,0 +1,12 @@
+.header{
+    position: absolute;
+    display: flex;
+    flex-direction: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 10%;
+    background-color: #8c8c8c;
+}

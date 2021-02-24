@@ -1,0 +1,10 @@
+<div class = "container" >
+    <div class = "elements" *ngFor = 'let product of products; let i = index' >
+        <p> {{product.id}}</p>
+        <p> {{product.name}}</p>
+        <img src = {{product.image}} style ="width: 100%">
+        <p> {{product.des}}</p>
+        <p> Product rating {{product.rating}}/5</p>
+        <a href = {{product.link}} target="_blank"> lisad</a>
+    </div>
+</div>
