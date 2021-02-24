@@ -8,7 +8,7 @@
             <p> Rating:    {{product.rating}}/5</p>
             </div>
         <div>
-            <button (click) = "telegram()" class= "btn_share"> share </button>
+            <button (click) = "telegram(product.link, product.name)" class= "btn_share"> share </button>
             <button (click) = "link(product.link)"> link </button>
         </div>
     </div>
