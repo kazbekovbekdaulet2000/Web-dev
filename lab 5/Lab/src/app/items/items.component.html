@@ -1,0 +1,15 @@
+<div class = "container" >
+    <div class = "elements" *ngFor = 'let product of filter(items)'>
+        <div (click) = "link(product.link)">
+            <h3> {{ product.name }}</h3>
+            <div class = "image"><img src = {{product.image}} height="180px"></div>
+            <p> {{product.des}}</p>
+            <p> Rating:    {{product.rating}}/5</p>
+        
+        </div>
+        <div>
+            <button (click) = "telegram(product.link, product.name)" class= "btn_share"> share </button>
+            <button (click) = "link(product.link)"> link </button>
+        </div>
+    </div>
+</div>
