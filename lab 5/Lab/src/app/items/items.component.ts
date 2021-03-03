@@ -1,15 +1,5 @@
 import { Component, Input, OnInit} from '@angular/core';
-import { first } from '../data';
-
-export interface Item{
-  id: number
-  name: string
-  image: string
-  des: string
-  rating: number
-  link:string
-  category: string
-}
+import { first, Item} from '../data';
 
 @Component({
   selector: 'app-items',
@@ -38,22 +28,23 @@ export class ItemsComponent implements OnInit {
     window.open(site, "_blank");
   }
 
-  like(){
-
-  }
-  liked(id) {
-    // if(id = 1){
-    //   return "none";
-    // }else{
-    //   return "black";
-    // }
-    return "none";
-  }
-
   delete(id, items: Item[]){
     for(let i=0; i<items.length; ++i){
       if(items[i].id == id){
         items.splice(i,1);
+      }
+    }
+  }
+
+  onClick(id, items: Item[]){
+    for(let i=0; i<items.length; ++i){
+      if(items[i].id == id){
+        items[i].liked = !items[i].liked;
+        if(items[i].liked){
+          items[i].likeCount ++;
+        } else{
+          items[i].likeCount--;
+        }
       }
     }
   }

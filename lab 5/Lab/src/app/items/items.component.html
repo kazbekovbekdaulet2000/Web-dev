@@ -12,13 +12,11 @@
             <button (click) = "link(product.link)"> link </button>
         </div>
         <div>
-            <button (click) = "delete(product.id, items)"> delete </button>
+            <button style = "background-color: rgb(241, 101, 101);"(click) = "delete(product.id, items)"> delete </button>
+            <button style="background-color:rgb(241, 101, 101);" *ngIf="product.liked" (click)="onClick(product.id, items)" aria-hidden="true"> like  {{product.likeCount}}</button>
+            <button style="background-color:grey;" *ngIf="!product.liked" (click)="onClick(product.id, items)" aria-hidden="true"> like  {{product.likeCount}}</button>
+		<!-- <span>{{ product.likeCount }}</span> -->
         </div>
-        <button
-			class="like"
-			[class.highlighted]="product.liked"  
-			(click)="onClick()"
-			aria-hidden="true"> like </button>
-			<span>{{ product.likeCount }}</span>
+        
     </div>
 </div>
