@@ -1,4 +1,4 @@
-<div class = "container" >
+<div class = "container">
     <div class = "elements" *ngFor = 'let product of filter(items)'>
         <div (click) = "link(product.link)">
             <h3> {{ product.name }}</h3>
@@ -11,5 +11,14 @@
             <button (click) = "telegram(product.link, product.name)" class= "btn_share"> share </button>
             <button (click) = "link(product.link)"> link </button>
         </div>
+        <div>
+            <button (click) = "delete(product.id, items)"> delete </button>
+        </div>
+        <button
+			class="like"
+			[class.highlighted]="product.liked"  
+			(click)="onClick()"
+			aria-hidden="true"> like </button>
+			<span>{{ product.likeCount }}</span>
     </div>
 </div>

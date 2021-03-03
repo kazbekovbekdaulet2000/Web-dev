@@ -38,6 +38,26 @@ export class ItemsComponent implements OnInit {
     window.open(site, "_blank");
   }
 
+  like(){
+
+  }
+  liked(id) {
+    // if(id = 1){
+    //   return "none";
+    // }else{
+    //   return "black";
+    // }
+    return "none";
+  }
+
+  delete(id, items: Item[]){
+    for(let i=0; i<items.length; ++i){
+      if(items[i].id == id){
+        items.splice(i,1);
+      }
+    }
+  }
+
   telegram(url, text){
     window.open("https://t.me/share/url?url="+url+"&text="+text,"_blank")
   }
