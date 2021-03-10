@@ -1,0 +1,21 @@
+<div>
+    <button (click) = "back()" class= "back">back</button>
+    <div *ngIf = "item" class = "container"> 
+        <h3>Album {{item.id}}</h3>
+        <input *ngIf = "editable" type="number" placeholder = "Album id" class="input">
+        <h4>{{item.title}}</h4>
+        <input *ngIf = "editable" type="text" placeholder = "Album title" class="input">
+        <p style ="right: 0"> Author id: {{item.userId}} </p>
+        <input *ngIf = "editable" type="number" placeholder = "Album author id" class="input">
+        <div>
+            <button (click) = "edit()" class = "edit"> Edit </button>
+            <button (click) = "updateItem(item.id)" *ngIf = "editable"> Save </button>
+        </div>
+        
+        <app-album-photo type = "{{item.id}}" *ngIf = "photoBtn"> </app-album-photo>
+    </div>
+    <button (click)="photoContent()" *ngIf = "!photoBtn" class="back">Photo</button>
+</div>
+
+<img class = "gif" *ngIf= "!item"  alt="" src = "../../assets/spinner.gif">
+<router-outlet></router-outlet>

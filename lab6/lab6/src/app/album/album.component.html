@@ -1,0 +1,14 @@
+<div *ngIf ="!loading" class = "container">
+    <div class = "elements" *ngFor = 'let item of list'>
+        <div (click) = "deleteItem(item.id)" class="delete">x</div>
+        <div routerLink = '/album/{{item.id}}' class = "clickable"> 
+            <div>
+                <h3>Album {{item.id}}</h3>
+                <h4>Title: {{item.title}}</h4>
+            </div>
+            <p style ="right: 0"> Author id: {{item.userId}} </p>
+        </div>
+    </div>
+</div>
+<img class = "gif" *ngIf= "loading" alt="" src = "../../assets/spinner.gif">
+<router-outlet></router-outlet>

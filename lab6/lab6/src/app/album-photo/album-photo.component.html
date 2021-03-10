@@ -1,0 +1,14 @@
+<div class = "container">
+    <div class = "elements" *ngFor = 'let photo of photos'>
+        <!-- <div routerLink = '/album/{{item.id}}' class = "clickable"> 
+            <div>
+                <h3>Album {{item.id}}</h3>
+                <h4>Title: {{item.title}}</h4>
+            </div>
+            <p style ="right: 0"> Author id: {{item.userId}} </p>
+        </div> -->
+        <img src = "{{photo.url}}">
+    </div>
+</div>
+<!-- <img class = "gif" alt="" src = "../../assets/spinner.gif"> -->
+<router-outlet></router-outlet>

@@ -1,0 +1,45 @@
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #3C3C3C;
+    color: white;
+    padding: 5px 50px 5px 50px;
+}
+
+.link{ 
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 20%;
+}
+
+a{
+  font-family: 'Economica', sans-serif;
+  color: white;
+  text-decoration-line: none;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+a:hover{
+  font-family: 'Economica', sans-serif;
+  opacity: 0.75;
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.icon{
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+}
+.icon:hover{
+  opacity: 0.75;
+  cursor: pointer;
+}
